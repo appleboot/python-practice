@@ -11,11 +11,38 @@ data = [
     {"name": "Kakyoin", "score": 84, "height": 188, "weight": 69},
 ]
 
-for person in data:
+print(data[0]["score"]+data[1]["score"]+data[2]["score"])
+for person in enumerate(name):
     score = person["score"]
     height = person["height"]
     weight = person["weight"]
     name = person["name"]
     
     score += score
-    print(score)
+    print(person)
+
+
+
+for i in enumerate(data):
+
+    print(i)
+    print(i.get("score"))
+
+
+anime = {
+    "name": "JoJo的奇妙冒險",
+    "publisher": "集英社",
+    "genre": ["動作", "超自然", "冒險", "奇幻"],
+    "author": "荒木飛呂彦",
+    "volumes": 134,
+    "status": "連載中",
+}
+
+for key in anime:
+    print(key)
+
+print("---")
+
+for key, value in anime.items():
+    print(f"{key}: {value}")
+
