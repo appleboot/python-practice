@@ -11,38 +11,16 @@ data = [
     {"name": "Kakyoin", "score": 84, "height": 188, "weight": 69},
 ]
 
-print(data[0]["score"]+data[1]["score"]+data[2]["score"])
-for person in enumerate(name):
-    score = person["score"]
-    height = person["height"]
-    weight = person["weight"]
-    name = person["name"]
-    
-    score += score
-    print(person)
-
-
-
-for i in enumerate(data):
-
-    print(i)
-    print(i.get("score"))
-
-
-anime = {
-    "name": "JoJo的奇妙冒險",
-    "publisher": "集英社",
-    "genre": ["動作", "超自然", "冒險", "奇幻"],
-    "author": "荒木飛呂彦",
-    "volumes": 134,
-    "status": "連載中",
-}
-
-for key in anime:
-    print(key)
-
-print("---")
-
-for key, value in anime.items():
-    print(f"{key}: {value}")
-
+max_score = 0
+max_score_person = ""
+min_weight = 999
+min_weihte_person = ""
+for du in data:
+    if du["score"] > max_score:
+        max_score = du["score"]
+        max_score_person = du["name"]
+    if du["weight"] < min_weight:
+        min_weight = du["weight"]
+        min_weihte_person = du["name"]
+print(f"{max_score_person}是最高分數{max_score}")
+print(f"{min_weihte_person}是最輕{min_weight}")
