@@ -9,4 +9,4 @@ if text == text1 : #
     print("2.申請書")
     print("3.股東同意書")
     print("4.公司送件委託書")
-    print("5.公司章程")
+    print("5.設立公司章程")
