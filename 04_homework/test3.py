@@ -37,4 +37,4 @@ def is_valid_id(id_number):
     
 # 測試範例
 is_valid_id("A123456789")
-is_valid_id("T124044879")
+is_valid_id("T124044878")
