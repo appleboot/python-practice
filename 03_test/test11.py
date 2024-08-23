@@ -13,10 +13,14 @@ data = [
 
 max_score = 0
 max_score_person = ""
-
+min_weight = 999
+min_weihte_person = ""
 for du in data:
-    
-    if max_score < du["score"]:
+    if du["score"] > max_score:
         max_score = du["score"]
         max_score_person = du["name"]
-print(f"{max_score_person} scores the highest of {max_score}.")
+    if du["weight"] < min_weight:
+        min_weight = du["weight"]
+        min_weihte_person = du["name"]
+print(f"{max_score_person}是最高分數{max_score}")
+print(f"{min_weihte_person}是最輕{min_weight}")
