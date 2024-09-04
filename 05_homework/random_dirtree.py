@@ -19,11 +19,3 @@ def make_random_dirtree(root: Path, depth: int, max_depth: int = 3):
         dir_path = root / dir_name
         dir_path.mkdir()
         make_random_dirtree(dir_path, depth=depth + 1, max_depth=max_depth)
-留言
-建議修訂
-delete_dirtree.py
-from pathlib import Path
-
-
-def delete_dirtree(root):
-    ...
