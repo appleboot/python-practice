@@ -27,7 +27,7 @@ def delete_dirtree():
                 folder.rmdir()
                 print(f"資料夾 {folder} 已被刪除。")
             
-        
+        #這一段好難 不知道怎麼解
     #這邊我想先設計 可以找到全部資料檔
    
  
